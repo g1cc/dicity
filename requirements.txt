@@ -1,0 +1,6 @@
+Flask                        ==2.0.2
+Flask-JWT                    ==0.3.2
+Flask-SocketIO               ==5.2.0
+colorama                     ==0.4.4
+Werkzeug                     ==2.0.2
+eventlet                     ==0.33.1

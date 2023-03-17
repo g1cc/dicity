@@ -1,0 +1,128 @@
+{% extends 'base.html' %} {% block links %}
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='/css/vet_style_new.css') }}"
+/>
+{% endblock %} {% block title %} VetCity {% endblock %} {% block body %}
+
+<div class="super_container content">
+  <div class="plate container-xxl pt-4 pb-0">
+    <div class="first-plate">
+      <div class="containter-xxl pt-5">
+        <div class="row w-100">
+          <p class="text-center mb-0">Круглосуточная ветеринарная клиника</p>
+        </div>
+        <div class="row w-100">
+          <a class="text-center">Зубарев пер., д. 7</a>
+        </div>
+      </div>
+      <div class="logoIMG">
+        <img
+          class="vetcity-image"
+          src="/image/vetcity_logo_main_block.svg"
+          alt=""
+          draggable="false"
+        />
+      </div>
+    </div>
+  </div>
+  <div class="plate container-xxl">
+    <div class="second-plate">
+      <div class="containter-xxl pt-5">
+        <div class="row w-100">
+          <p class="second-plate-title">CHECK UP</p>
+        </div>
+        <div class="row w-100">
+          <p class="second-plate-desc">КОМПЛЕКСНАЯ ДИАГНОСТИКА</p>
+        </div>
+        <div>
+          <div class="second-plate-fulldesc">
+            Комплексное экспресс-обследование <br />
+            вашего питомца. Услуга доступна <br />
+            только в будни.
+          </div>
+        </div>
+        <div class="row">
+          <div class="second-plate-button-holder">
+            <div
+              class="btn second-plate-button rounded-5 pt-2 pb-2 rounded-right btn-light"
+            >
+              ПОДРОБНЕЕ
+            </div>
+          </div>
+        </div>
+        <div class="dogImageHolder">
+          <img
+            class="dogImage"
+            src="/image/38-transformed.png"
+            draggable="false"
+          />
+          <!-- <img class="shadow" src="images" alt=""> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="plate container-xxl">
+    <div class="about third-plate">
+      <img class="img_about" src="/image/about_us.jpg" alt="">
+      <div class="about_us">
+        <p class="title_us">
+          About us
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum odit
+          eius itaque sapiente illum quidem pariatur sit asperiores dolorem non
+          corporis repellat voluptatem deserunt impedit, ratione nesciunt magni
+          cum saepe.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="plate container-xxl">
+    
+    <div class="plate_services">
+
+      <h3 class="services_title">Услуги</h3>
+      <div class="card_items">
+
+        <div class="card-1 card">
+          <span class="type_items">Хирургия</span>
+          <img class="dog" src="image\1 (1).png" alt="" />
+        </div>
+
+        <div class="card-2 card">
+          <span class="type_items">Терапия</span>
+          <img class="dog" src="image\haski.png" alt="" />
+        </div>
+
+        <div class="card-3">
+          Мы стремимся обеспечивать высокий уровень профессиональной
+          ветеринарной помощи, повышать качество жизни животных и развивать
+          культуру ответственного отношения к ним.
+        </div>
+
+        <div class="card-4 card">
+          <span class="type_items">Визуальная диагностика</span>
+          <img class="kit" src="image\white-kit.png" alt="" />
+        </div>
+
+        <div class="card-5 card">
+          <span class="type_items">Стационар</span>
+          <img class="dog" src="image\dog1.png" alt="" />
+        </div>
+
+        <div class="card-6">
+          <img class="logo_24" src="image\24-hours.svg" alt="" />
+          <span class="">Широкий спект ветеринарных услуг.</span>
+        </div>
+
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+{% endblock %} {% block scripts %}
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.js"></script>
+{% endblock %}

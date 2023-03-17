@@ -1,0 +1,24 @@
+ul::-webkit-scrollbar {
+    width: 9px;
+    height: 9px;
+}
+  
+ul::-webkit-scrollbar-button:start:decrement,
+ul::-webkit-scrollbar-button:end:increment {
+display: block;
+height: 0;
+background-color: transparent;
+}
+  
+ul::-webkit-scrollbar-track-piece {
+    background-color: #ffffff;
+    opacity: 0.2;
+
+    /* Here */
+    display: none;
+}
+  
+ul::-webkit-scrollbar-thumb:vertical {
+    height: 50px;
+    background-color: #1e1e1e;
+    }

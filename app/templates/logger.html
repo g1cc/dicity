@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block links %}
+<link rel="stylesheet" href="{{ url_for('static', filename='/css/logger.css') }}">
+{% endblock %}
+
+{% block title %}
+LOGGER
+{% endblock %}
+
+{% block body %}
+<div class="super_container" style="height: 100vh; overflow: hidden;">
+    <div class="row h-100 justify-content-center">
+        <div class="col-xl-10">
+            <div class="px-2 pb-5 h-100">
+                <div class="container-sm rounded p-2 bg-dark w-100 h-100">
+                    <div class="row px-2">
+                        <div class="pt-2" id="header">
+                            <div class="container-xl pt-2 px-0 px-3">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <button id="live_button" class="btn btn-success pt-1 px-2 float-start rounded-5" style="width: 100%;"><span style="font-size:smaller;">Live</span></button>
+                                    </div>
+                                    <div class="col-6">
+                                        <h4 class="text-center text-white pt-1 float-center">LOGGER</h4>
+                                    </div>
+                                    <div class="col-3"></div>
+                                </div>
+                            </div>
+                            <hr class="bg-white border-2 border-top border-white">
+                        </div>
+                
+                        <ul id="ulBody" class="pt-2 rounded" style="list-style: none; height: 75vh; overflow-y: scroll">
+                            <!-- {{ loggs|safe }} -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='/src/logger.js') }}"></script>
+{% endblock %}

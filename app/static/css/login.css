@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter";
+}
+
+body {
+  position: relative;
+}
+
+a {
+  outline: none;
+}
+
+/* @font-face {
+  font-family: "Inter";
+  src: url("./fonts/inter/Inter-Regular.ttf"),
+       url("./fonts/inter/Inter-Medium.ttf");       
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("./fonts/inter/Inter-SemiBold.ttf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Inter";
+  src:url("./fonts/inter/Inter-ExtraBold.ttf");  
+       
+  font-weight: 900;
+} */
+
+body {
+  background: #1b1b29;
+}
+
+.logins {
+  margin: 0 auto;
+  margin-top: 70px;
+  height: 450px;
+  width: 1200px;
+  border-radius: 50px;
+  background: rgb(255, 255, 255);
+}
+
+.text_registration {
+  display: flex;
+  flex-direction: column;
+  padding-top: 35px;
+  padding-left: 50px;
+  height: 100px;
+  color: #013fff;
+  font-size: 50px;
+  /* border-top-left-radius: 10px;
+  border-top-right-radius: 10px; */
+  /* text-transform: uppercase; */
+}
+
+.welcome {
+  display: flex;
+  font-size: 15px;
+  color: gray;
+  /* font-weight: 400; */
+}
+
+.content_login {
+  display: flex;
+  /* position: relative; */
+  height: 200px;
+  padding-left: 50px;
+  margin-top: 20px;
+  /* width: auto; */
+  flex-direction: column;
+  justify-content: space-around;
+  z-index: 2;
+}
+
+.e-mail,
+.password {
+  /* margin: 0 auto; */
+  margin-left: 20px;
+  width: 450px;
+  height: 40px;
+  text-align: left;
+  vertical-align: text-top;
+  color: gray;
+  background-color: #f5f4f7;
+  border: none;
+  outline: none;
+}
+
+.e-mail_img,
+.password_img {
+  width: 20px;
+  /* vertical-align: top; */
+}
+
+.mail_content,
+.password_content {
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  padding-top: 5px;
+  padding-left: 7px;
+  width: 450px;
+  height: 45px;
+  background: #f5f4f7;
+  border-radius: 4px;
+}
+
+h2 {
+  font-weight: 900;
+}
+
+.welcome {
+  padding-bottom: 10px;
+}
+
+.second-plate-button-holder {
+  display: flex;
+}
+
+.btn_send {
+  background-color: #013fff;
+  color: white;
+  width: 450px;
+  height: 40px;
+  font-size: 16px;
+  box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.1);
+}
+
+.dog_img {
+  position: relative;
+  display: flex;
+  left: 57%;
+  top: -41.8%;
+  /* z-index: 1; */
+  width: 450px;
+}
+
+.container_link_registration {
+  width: 450px;
+  height: 40px;
+}
+
+.link_registartion {
+  display: block;
+  font-size: 14px;
+  text-align: center;
+  color: #013fff;
+}

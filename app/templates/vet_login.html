@@ -1,0 +1,49 @@
+{% extends 'base.html' %} {% block links %}
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='/css/login.css') }}"
+/>
+{% endblock %} {% block title %} VetCity {% endblock %} {% block body %}
+<form class="content" action="" method="get">
+  <div class="logins">
+    <div class="text_registration">
+      <h2>Авторизация ✨</h2>
+      <p class="welcome">Добро пожаловать !</p>
+    </div>
+
+    <div class="content_login">
+      <div class="mail_content">
+        <img
+          class="e-mail_img"
+          src="image/email-icons-grey-732661.png"
+          alt=""
+        />
+        <input class="e-mail" type="email" name="e-mail" placeholder="E-mail" />
+      </div>
+      <div class="password_content">
+        <img class="password_img" src="image/padlock.png" alt="" />
+        <input
+          class="password"
+          type="password"
+          name="password"
+          placeholder="Пароль"
+        />
+      </div>
+
+      <div class="second-plate-button-holder">
+        <div
+          class="btn second-plate-button rounded-5 pt-2 pb-2 rounded-right btn-light btn_send"
+        >
+          Войти
+        </div>
+      </div>
+
+      <div class="container_link_registration">
+        <a class="link_registartion" href="">Зарегистрироваться</a>
+      </div>
+    </div>
+    <img class="dog_img" src="image/pngegg 1.png" alt="" />
+  </div>
+</form>
+
+{% endblock %}
